@@ -18,7 +18,7 @@ export function Header() {
           <div className="flex-shrink-0">
             <a
               href="/"
-              className="text-xl font-bold bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent hover:from-purple-300 hover:to-pink-300 transition-all"
+              className="text-xl font-bold text-[#8B9556] hover:text-[#a3ab6b] transition-all"
             >
               Катя Щербакова
             </a>
@@ -30,7 +30,7 @@ export function Header() {
               <a
                 key={item.name}
                 href={item.href}
-                className="text-gray-300 hover:text-white transition-colors text-sm font-medium"
+                className="text-gray-300 hover:text-[#8B9556] transition-colors text-sm font-medium"
               >
                 {item.name}
               </a>
@@ -40,7 +40,7 @@ export function Header() {
           {/* CTA Button */}
           <div className="flex items-center gap-4">
             <Button
-              className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white transition-all duration-300 hover:scale-105 shadow-lg shadow-purple-500/30"
+              className="bg-[#8B9556] hover:bg-[#a3ab6b] text-white transition-all duration-300 hover:scale-105"
               onClick={() => window.open('https://t.me/votkatya', '_blank')}
             >
               <Send className="w-4 h-4 mr-2" />

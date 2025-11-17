@@ -12,10 +12,10 @@ export function HeroSection() {
   ]
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-purple-950 overflow-hidden pt-20">
-      {/* Gradient overlays */}
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent" />
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-pink-900/20 via-transparent to-transparent" />
+    <section className="relative min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 overflow-hidden pt-20">
+      {/* Subtle overlays */}
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-[#8B9556]/10 via-transparent to-transparent" />
+      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-gray-800/30 via-transparent to-transparent" />
 
       <div className="container relative mx-auto max-w-6xl px-6 py-20 lg:py-32">
         <div className="grid gap-12 lg:grid-cols-2 lg:gap-16 items-center">
@@ -24,12 +24,12 @@ export function HeroSection() {
             {/* Headline */}
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight">
               <span className="text-white">Управляйте </span>
-              <span className="bg-gradient-to-r from-purple-400 via-pink-400 to-purple-600 bg-clip-text text-transparent">
+              <span className="text-[#8B9556]">
                 бизнесом
               </span>
               <br />
               <span className="text-white">на новом </span>
-              <span className="bg-gradient-to-r from-pink-400 via-purple-400 to-pink-600 bg-clip-text text-transparent">
+              <span className="text-[#8B9556]">
                 уровне
               </span>
             </h1>
@@ -44,14 +44,14 @@ export function HeroSection() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Button
                 size="lg"
-                className="bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white text-lg px-8 py-6 h-auto transition-all duration-300 hover:scale-105 shadow-lg shadow-purple-500/50"
+                className="bg-[#8B9556] hover:bg-[#a3ab6b] text-white text-lg px-8 py-6 h-auto transition-all duration-300 hover:scale-105"
               >
                 Начать бесплатно
               </Button>
               <Button
                 size="lg"
                 variant="outline"
-                className="border-2 border-gray-600 text-white hover:bg-white/10 text-lg px-8 py-6 h-auto transition-all duration-300"
+                className="border-2 border-gray-600 text-white hover:bg-white/10 hover:border-[#8B9556] text-lg px-8 py-6 h-auto transition-all duration-300"
               >
                 Посмотреть демо
               </Button>
@@ -75,7 +75,7 @@ export function HeroSection() {
                             key={i}
                             className={`w-3.5 h-3.5 ${
                               i < Math.floor(item.rating)
-                                ? "fill-yellow-400 text-yellow-400"
+                                ? "fill-[#8B9556] text-[#8B9556]"
                                 : "text-gray-600"
                             }`}
                           />
@@ -100,8 +100,8 @@ export function HeroSection() {
           {/* Image Section */}
           <div className="relative order-first lg:order-last">
             <div className="relative aspect-square lg:aspect-auto lg:h-[600px]">
-              {/* Glow effect */}
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 to-pink-600/20 rounded-xl blur-3xl" />
+              {/* Subtle glow effect */}
+              <div className="absolute inset-0 bg-[#8B9556]/10 rounded-xl blur-3xl" />
 
               {/* Image placeholder */}
               <div className="relative bg-gradient-to-br from-gray-800 to-gray-900 w-full h-full rounded-xl border border-white/10 shadow-2xl overflow-hidden">
@@ -109,12 +109,12 @@ export function HeroSection() {
                 <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
                 {/* Decorative elements */}
-                <div className="absolute top-8 left-8 w-32 h-32 bg-purple-600/30 rounded-full blur-3xl" />
-                <div className="absolute bottom-8 right-8 w-40 h-40 bg-pink-600/30 rounded-full blur-3xl" />
+                <div className="absolute top-8 left-8 w-32 h-32 bg-[#8B9556]/20 rounded-full blur-3xl" />
+                <div className="absolute bottom-8 right-8 w-40 h-40 bg-gray-700/30 rounded-full blur-3xl" />
 
                 {/* Center decoration */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-gradient-to-br from-purple-500 to-pink-500 rounded-2xl opacity-20 animate-pulse" />
+                  <div className="w-32 h-32 bg-[#8B9556]/20 rounded-2xl opacity-40 animate-pulse" />
                 </div>
               </div>
             </div>
