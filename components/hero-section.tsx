@@ -12,7 +12,7 @@ export function HeroSection() {
   ]
 
   return (
-    <section className="relative min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-purple-950 overflow-hidden">
+    <section className="relative min-h-screen bg-gradient-to-br from-gray-950 via-gray-900 to-purple-950 overflow-hidden pt-20">
       {/* Gradient overlays */}
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-purple-900/20 via-transparent to-transparent" />
       <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_bottom_left,_var(--tw-gradient-stops))] from-pink-900/20 via-transparent to-transparent" />
